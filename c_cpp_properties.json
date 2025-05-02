@@ -1,0 +1,29 @@
+{
+    "version": 4,
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:/SFML/SFML-2.4.2/include",  // Adjust this to your SFML include directory
+                "C:/mingw/include",            // Path to MinGW's include directory
+                "D:/OS_PROJECT/libs",          // Path to the directory containing json.hpp
+                "${workspaceFolder}",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "C:/mingw/bin/g++.exe",  // Path to g++ executable
+            "intelliSenseMode": "gcc-x64",           // IntelliSense mode for 64-bit gcc
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "C:/SFML/SFML-2.4.2/include",  // Adjust this to your SFML include directory
+                    "C:/mingw/include",            // Path to MinGW's include directory
+                    "D:/OS_PROJECT/libs",          // Path to the directory containing json.hpp
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ]
+}

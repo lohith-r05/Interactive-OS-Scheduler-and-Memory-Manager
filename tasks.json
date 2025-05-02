@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Project",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "main.cpp",
+        "-I", "D:/OS_Project/libs",                     // JSON include path
+        "-I", "C:/SFML/SFML-2.4.2/include",             // SFML include
+        "-L", "C:/SFML/SFML-2.4.2/lib",                 // SFML lib
+        "-lsfml-graphics",
+        "-lsfml-window",
+        "-lsfml-system",
+        "-o", "double_click_it.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Builds the SFML + JSON project"
+    },
+    {
+      "label": "Run Project in Terminal",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "double_click_it.exe"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ]
+}
